@@ -8,6 +8,7 @@ import {log10} from "chart.js/helpers";
 
 export default function Home() {
 
+
     const [formState, setFormState] = useState(false);
 
     const[pilici, setPilici] = useState({});
@@ -36,14 +37,23 @@ export default function Home() {
             new Date(povTemp.datumVrijeme).getHours() + ":" + new Date(povTemp.datumVrijeme).getMinutes() + "." + new Date(povTemp.datumVrijeme).getSeconds()
         )),
         datasets: [{
-            label: "Povijest temperature",
+            label: "Temperatura",
             data: povijestTemperature?.map((povTemp) => (
                 povTemp.temperatura
             )),
-            backgroundColor: "rgb(99 102 241)",
-            borderColor: "rgb(99 102 241)",
+            backgroundColor: "rgb(250 204 21)",
+            borderColor: "rgb(250 204 21)",
             borderWidth: 3
-        }]
+        },
+            {
+                label: "Vlaga",
+                data: povijestTemperature?.map((povTemp) => (
+                    povTemp.vlaga
+                )),
+                backgroundColor: "rgb(99 102 241)",
+                borderColor: "rgb(99 102 241)",
+                borderWith: 3
+            }]
     }
 
     function handle(e) {
