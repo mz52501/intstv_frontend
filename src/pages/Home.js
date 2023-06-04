@@ -158,7 +158,7 @@ export default function Home() {
                         <div className=" w-48 h-28 text-6xl bg-yellow-300 rounded-sm shadow-md flex justify-center items-center"><p>{pilici.trenutnaTemperatura}</p><TbTemperatureCelsius size={40} /></div>
                     </div>
                     <div className="mb-8 text-xl bg-indigo-500 w-96 rounded-sm shadow-md h-10 flex justify-center items-center text-white font-semibold">Trenutna vlažnost</div>
-                    <div className=" w-48 h-28 bg-yellow-300 rounded-sm shadow-md flex justify-center items-center"><p className="text-6xl mr-12">{pilici.trenutnaVlaga}</p><p className="font-bold text-4xl">%</p></div>
+                    <div className=" w-48 h-28 bg-yellow-300 rounded-sm shadow-md flex justify-center items-center"><p className="text-6xl mr-1">{pilici.trenutnaVlaga}</p><p className="font-bold text-4xl">%</p></div>
 
                 </div>
              </div>
