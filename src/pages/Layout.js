@@ -11,17 +11,17 @@ export default function Layout() {
                 <div>
                 <button onClick={() => {navigate("/sensor/1");
                     window.location.reload();}}
-                        className="text-white mr-2 py-2.5 ml-2 rounded-sm px-3 bg-indigo-500 text-lg hover:bg-indigo-700 hover:bg-indigo-700">
+                        className="font-semibold text-white mr-2 py-2.5 ml-2 rounded-sm px-3 bg-indigo-500 text-lg hover:bg-indigo-700 hover:bg-indigo-700">
                     <p className="item">Inkubator 1</p>
                 </button>
                 <button onClick={() => {navigate("/sensor/2");
                     window.location.reload();}}
-                        className="text-white mr-2 rounded-sm py-2.5 px-3 bg-indigo-500 text-lg hover:bg-indigo-700 hover:bg-indigo-700">
+                        className="font-semibold text-white mr-2 rounded-sm py-2.5 px-3 bg-indigo-500 text-lg hover:bg-indigo-700 hover:bg-indigo-700">
                     <p className="item" to="/subjects">Inkubator 2</p>
                 </button>
                 <button onClick={() => {navigate("/sensor/3");
                     window.location.reload();}}
-                        className="text-white py-2.5 px-3 rounded-sm text-lg bg-indigo-500 hover:bg-indigo-700 hover:bg-indigo-700">
+                        className="font-semibold text-white py-2.5 px-3 rounded-sm text-lg bg-indigo-500 hover:bg-indigo-700 hover:bg-indigo-700">
                 <p className="item">Inkubator 3</p>
                 </button>
                 </div>
