@@ -124,7 +124,7 @@ export default function Home() {
             <div className="flex justify-center mb-20">
             <div className="w-2/5 mt-10 inline">
                 <div className="mb-5 text-xl bg-indigo-500 w-60 rounded-sm shadow-md h-10 flex justify-center items-center text-white font-semibold">Dob pilića</div>
-                <div className="font-semibold w-32 mb-10 text-lg bg-yellow-300 rounded-sm shadow-md flex justify-center items-center">{pilici.dob + " dana"}</div>
+                <div className="font-semibold w-32 mb-10 text-lg bg-yellow-300 rounded-sm shadow-md flex justify-center items-center">{pilici.dob === 1 ? pilici.dob + " dan" : pilici.dob + " dana"}</div>
                 <div className="flex mt-10 mb-14">
                     <div className="mr-10">
                         <div className="mb-5 text-xl bg-indigo-500 w-60 rounded-sm shadow-md h-10 flex justify-center items-center text-white font-semibold">Minimalna temperatura</div>
@@ -158,7 +158,7 @@ export default function Home() {
                         <div className=" w-48 h-28 text-6xl bg-yellow-300 rounded-sm shadow-md flex justify-center items-center"><p>{pilici.trenutnaTemperatura}</p><TbTemperatureCelsius size={40} /></div>
                     </div>
                     <div className="mb-8 text-xl bg-indigo-500 w-96 rounded-sm shadow-md h-10 flex justify-center items-center text-white font-semibold">Trenutna vlažnost</div>
-                    <div className=" w-48 h-28 bg-yellow-300 rounded-sm shadow-md flex justify-center items-center"><p className="text-6xl mr-2">{pilici.trenutnaVlaga}</p><p className="font-semibold text-xl">kg/m3</p></div>
+                    <div className=" w-48 h-28 bg-yellow-300 rounded-sm shadow-md flex justify-center items-center"><p className="text-6xl mr-12">{pilici.trenutnaVlaga}</p><p className="font-bold text-4xl">%</p></div>
 
                 </div>
              </div>

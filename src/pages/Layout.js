@@ -25,7 +25,7 @@ export default function Layout() {
                 <p className="item">Inkubator 3</p>
                 </button>
                 </div>
-                <div className="w-6/12 flex justify-center items-center">
+                <div className="w-1/2 flex justify-center items-center">
                 <div className="text-white py-3 px-4 rounded-sm w-24 flex justify-center items-center">
                     <GiChicken size={35}/>
                 </div>
